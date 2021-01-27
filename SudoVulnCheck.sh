@@ -11,7 +11,7 @@ echo "current version: ${currentver}"
 requiredver="1.8.32"
 if [ $osver = "Ubuntu" ]; then
  if [ "$(printf '%s\n' "$requiredver" "$currentver" | sort -V | head -n1)" = "$requiredver" ]; then 
-        echo "Greater than or equal to ${requiredver}"
+        echo "Greater than or equal to ${requiredver} Sudo doesnt seem vulnerable"
  else
         echo "Less than ${requiredver}, version of Sudo is vulnerable"
  fi
